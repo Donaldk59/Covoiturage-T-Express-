@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>TRAVELER - Free Travel Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+   
+
+
+   
+    <!-- Navbar Start -->
+    <div class="container-fluid position-relative nav-bar p-0">
+        <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9;">
+            <nav class="navbar navbar-expand-lg bg-light navbar-light shadow-lg py-3 py-lg-0 pl-3 pl-lg-5">
+                <a href="" class="navbar-brand">
+                    <h1 class="m-0 text-primary"><span class="text-dark">T-Ex</span>press</h1>
+                </a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto py-0">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="service.html" class="nav-item nav-link">Services</a>
+                        <a href="package.html" class="nav-item nav-link">Reservations</a>
+                       
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        <a href="index1.html" class="nav-item nav-link"></a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Header Start -->
+    <div class="container-fluid page-header">
+        <div class="container">
+            <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
+                <h3 class="display-4 text-white text-uppercase">Reservations</h3>
+                <div class="d-inline-flex text-white">
+                    <p class="m-0 text-uppercase"><a class="text-white" href="">Home</a></p>
+                    <i class="fa fa-angle-double-right pt-1 px-3"></i>
+                    <p class="m-0 text-uppercase">Reservations</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+
+   
+
+    
+    
+    <header class="bg-primary text-white text-center py-5">
+        <h1>Profils des Conducteurs</h1>
+        <p class="lead">Découvrez les profils des conducteurs disponibles pour vos trajets.</p>
+    </header>
+    
+    <!-- Barre de recherche des trajets -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">T-Express</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <form class="form-inline">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Rechercher un trajet" aria-label="Rechercher">
+                        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Rechercher</button>
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    
+    <div class="container mt-4">
+        <div class="d-flex flex-wrap justify-content-around">
+            <!-- Profil du conducteur 1 -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card text-center">
+                    <div class="card-header bg-primary text-white">
+                        <h3 class="card-title">Ama</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="rounded-circle overflow-hidden mx-auto mb-3" style="width: 150px; height: 150px;">
+                            <img src="k.webp" alt="Image du Conducteur" class="w-100 h-100 object-fit-cover">
+                        </div>
+                        <!-- Utilisez des listes déroulantes pour afficher les informations -->
+                        <select class="custom-select mb-2" id="conducteur1-depart">
+                            <option selected disabled>Point de Départ</option>
+                            <option value="depart-ville-a">VilleA</option>
+                            <option value="depart-ville-b">VilleB</option>
+                            <!-- Ajoutez d'autres options au besoin -->
+                        </select>
+                        <select class="custom-select mb-2" id="conducteur1-destination">
+                            <option selected disabled>Destination</option>
+                            <option value="destination-ville-c">VilleC</option>
+                            <option value="destination-ville-d">VilleD</option>
+                            <!-- Ajoutez d'autres options au besoin -->
+                        </select>
+                        <select class="custom-select mb-2" id="conducteur1-heure-depart">
+                            <option selected disabled>Heure de Départ</option>
+                            <option value="heure-0800">08:00 AM</option>
+                            <option value="heure-0930">09:30 AM</option>
+                            <!-- Ajoutez d'autres options au besoin -->
+                        </select>
+                        <select class="custom-select mb-2" id="conducteur1-places-disponibles">
+                            <option selected disabled>Places Disponibles</option>
+                            <option value="places-2">2</option>
+                            <option value="places-3">3</option>
+                            <!-- Ajoutez d'autres options au besoin -->
+                        </select>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Profil du conducteur 2 -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card text-center">
+                    <div class="card-header bg-primary text-white">
+                        <h3 class="card-title">MZLOPAN</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="rounded-circle overflow-hidden mx-auto mb-3" style="width: 150px; height: 150px;">
+                            <img src="f.jpg" alt="Image du Conducteur" class="w-100 h-100 object-fit-cover">
+                        </div>
+                        <!-- Utilisez des listes déroulantes pour afficher les informations -->
+                        <select class="custom-select mb-2" id="conducteur2-depart">
+                            <option selected disabled>Point de Départ</option>
+                            <option value="depart-ville-a">VilleA</option>
+                            <option value="depart-ville-b">VilleB</option>
+                            <!-- Ajoutez d'autres options au besoin -->
+                        </select>
+                        <select class="custom-select mb-2" id="conducteur2-destination">
+                            <option selected disabled>Destination</option>
+                            <option value="destination-ville-c">VilleC</option>
+                            <option value="destination-ville-d">VilleD</option>
+                            <!-- Ajoutez d'autres options au besoin -->
+                        </select>
+                        <select class="custom-select mb-2" id="conducteur2-heure-depart">
+                            <option selected disabled>Heure de Départ</option>
+                            <option value="heure-0800">08:00 AM</option>
+                            <option value="heure-0930">09:30 AM</option>
+                            <!-- Ajoutez d'autres options au besoin -->
+                        </select>
+                        <select class="custom-select mb-2" id="conducteur2-places-disponibles">
+                            <option selected disabled>Places Disponibles</option>
+                            <option value="places-2">2</option>
+                            <option value="places-3">3</option>
+                            <!-- Ajoutez d'autres options au besoin -->
+                        </select>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Profil du conducteur 3 -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card text-center">
+                    <div class="card-header bg-primary text-white">
+                        <h3 class="card-title">DESIGH</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="rounded-circle overflow-hidden mx-auto mb-3" style="width: 150px; height: 150px;">
+                            <img src="g.webp" alt="Image du Conducteur" class="w-100 h-100 object-fit-cover">
+                        </div>
+                        <!-- Utilisez des listes déroulantes pour afficher les informations -->
+                        <select class="custom-select mb-2" id="conducteur3-depart">
+                            <option selected disabled>Point de Départ</option>
+                            <option value="depart-ville-a">VilleA</option>
+                            <option value="depart-ville-b">VilleB</option>
+                            <!-- Ajoutez d'autres options au besoin -->
+                        </select>
+                        <select class="custom-select mb-2" id="conducteur3-destination">
+                            <option selected disabled>Destination</option>
+                            <option value="destination-ville-c">VilleC</option>
+                            <option value="destination-ville-d">VilleD</option>
+                            <!-- Ajoutez d'autres options au besoin -->
+                        </select>
+                        <select class="custom-select mb-2" id="conducteur3-heure-depart">
+                            <option selected disabled>Heure de Départ</option>
+                            <option value="heure-0800">08:00 AM</option>
+                            <option value="heure-0930">09:30 AM</option>
+                            <!-- Ajoutez d'autres options au besoin -->
+                        </select>
+                        <select class="custom-select mb-2" id="conducteur3-places-disponibles">
+                            <option selected disabled>Places Disponibles</option>
+                            <option value="places-2">2</option>
+                            <option value="places-3">3</option>
+                            <!-- Ajoutez d'autres options au besoin -->
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    
+    <footer class="bg-light text-center py-3">
+        <p>&copy; 2024 Votre Entreprise. Tous droits réservés.</p>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+    </html>
+    
+ <!-- Footer Start -->
+ <div class="container-fluid bg-dark text-white-50 py-5 px-sm-3 px-lg-5" style="margin-top: 90px;">
+    <div class="row pt-5">
+        <div class="col-lg-3 col-md-6 mb-5">
+            <a href="" class="navbar-brand">
+                <h1 class="text-primary"><span class="text-white">T-Ex</span>press</h1>
+            </a>
+            <p></p>
+            <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Follow Us</h6>
+            <div class="d-flex justify-content-start">
+                <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-outline-primary btn-square" href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5">
+            <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Our Services</h5>
+            <div class="d-flex flex-column justify-content-start">
+                <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>About</a>
+               
+                <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Services</a>
+                <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Reservations</a>
+              
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5">
+            <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Usefull Links</h5>
+            <div class="d-flex flex-column justify-content-start">
+                <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>About</a>
+              
+                <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Services</a>
+                <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Reservations</a>
+              
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5">
+            <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Contact Us</h5>
+            <p><i class="fa fa-map-marker-alt mr-2"></i>123 Street, New York, USA</p>
+            <p><i class="fa fa-phone-alt mr-2"></i>+012 345 67890</p>
+      
+            <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Newsletter</h6>
+            <div class="w-100">
+                <div class="input-group">
+                    <input type="text" class="form-control border-light" style="padding: 25px;" placeholder="Your Email">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary px-3">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5" style="border-color: rgba(256, 256, 256, .1) !important;">
+    <div class="row">
+        <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
+          
+            </p>
+        </div>
+        <div class="col-lg-6 text-center text-md-right">
+          
+            </p>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
